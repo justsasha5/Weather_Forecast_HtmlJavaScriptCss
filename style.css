@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('./backgroundp.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.weather-data {
+    margin-top: 20px;
+}
+
+.current-weather {
+    margin-bottom: 20px;
+}
+
+.forecast {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.forecast-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    text-align: center;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; /* Adjust for smaller screens */
+    }
+    .search {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+    input[type="text"], button {
+        width: 100%; /* Make input and button full-width */
+    }
+    .forecast-details {
+        justify-content: center; /* Center forecast items */
+    }
+}
